@@ -1,0 +1,47 @@
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+  padding: 2rem 2rem
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput input{
+  padding: 0.7rem;
+  color: blue;
+  margin: 7px 0px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+.App button {
+  padding: 0.5rem 1.3rem;
+  width: 100%;
+  background-color: rgb(51, 51, 206);
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: 90%;
+  font-weight: 500;
+  margin-top: 0.7rem;
+}
+
+.formInput .errorMsg {
+  color: red;
+  font-size: 0.9rem;
+}

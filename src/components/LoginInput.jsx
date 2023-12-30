@@ -5,7 +5,7 @@ export default function LoginInput({
     label,
     placeholder,
     type,
-    value,
+    register,
     errorMessage
 }) {
   return (

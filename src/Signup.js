@@ -49,7 +49,6 @@ function Signup() {
         localStorage.setItem(data.email, JSON.stringify(userData));
 
         // navigate to dashboard page when successful..
-        console.log('success..')
         navigate('/Dashboard')
         console.log(JSON.parse(localStorage.getItem(data.email)));
 
@@ -120,7 +119,7 @@ function Signup() {
           errorMessage={errors.confirmPassword?.message}
         />
         <div style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
-          <input onClick={formSubmit} type='submit' value='Sign up'/>
+          <input style={{padding:'0.4rem 0', borderRadius:'0.3rem', border:'none', backgroundColor:'blue', color:'white', fontWeight:'600', cursor:'pointer'}} onClick={formSubmit} type='submit' value='Sign up'/>
           <span style={{paddingTop:'0.4rem'}}>Already have an account? <Link to='/Login' style={{textDecoration:'none', color:'blue'}}>Login</Link></span>
         </div>
           
